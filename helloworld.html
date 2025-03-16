@@ -1,6 +1,16 @@
 <html>
     <body>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="greetUser()">Submit</button>
+        <p id="greeting"></p>
+
         <script>
+            function greetUser() {
+                const name = document.getElementById("nameInput").value;
+                document.getElementById("greeting").innerHTML = "Hello " + name;
+            }
+            
+            // Initial greeting
             document.write("Hello World");
         </script>
     </body>
